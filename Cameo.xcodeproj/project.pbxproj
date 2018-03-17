@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05883E02047E3A900AB27C4 /* testScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = B05883DF2047E3A900AB27C4 /* testScene.scn */; };
 		B0930711204715BB0058E273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0930710204715BB0058E273 /* AppDelegate.swift */; };
 		B0930713204715BB0058E273 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0930712204715BB0058E273 /* ViewController.swift */; };
 		B0930715204715BB0058E273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0930714204715BB0058E273 /* Assets.xcassets */; };
 		B0930718204715BB0058E273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0930716204715BB0058E273 /* Main.storyboard */; };
 		B0930724204715BB0058E273 /* CameoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0930723204715BB0058E273 /* CameoTests.swift */; };
 		B093072F204715BB0058E273 /* CameoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093072E204715BB0058E273 /* CameoUITests.swift */; };
+		B0950390204B573F009999F2 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095038F204B573F009999F2 /* Robot.swift */; };
+		B0950394204B5802009999F2 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0950393204B5802009999F2 /* Link.swift */; };
+		B0950396204B5807009999F2 /* Joint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0950395204B5807009999F2 /* Joint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B05883DF2047E3A900AB27C4 /* testScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = testScene.scn; sourceTree = "<group>"; };
 		B093070D204715BB0058E273 /* Cameo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cameo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0930710204715BB0058E273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0930712204715BB0058E273 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +51,9 @@
 		B093072A204715BB0058E273 /* CameoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B093072E204715BB0058E273 /* CameoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameoUITests.swift; sourceTree = "<group>"; };
 		B0930730204715BB0058E273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B095038F204B573F009999F2 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		B0950393204B5802009999F2 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		B0950395204B5807009999F2 /* Joint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +104,14 @@
 		B093070F204715BB0058E273 /* Cameo */ = {
 			isa = PBXGroup;
 			children = (
+				B095038E204B572F009999F2 /* Robot */,
 				B0930710204715BB0058E273 /* AppDelegate.swift */,
 				B0930712204715BB0058E273 /* ViewController.swift */,
 				B0930714204715BB0058E273 /* Assets.xcassets */,
 				B0930716204715BB0058E273 /* Main.storyboard */,
 				B0930719204715BB0058E273 /* Info.plist */,
 				B093071A204715BB0058E273 /* Cameo.entitlements */,
+				B05883DF2047E3A900AB27C4 /* testScene.scn */,
 			);
 			path = Cameo;
 			sourceTree = "<group>";
@@ -122,6 +132,16 @@
 				B0930730204715BB0058E273 /* Info.plist */,
 			);
 			path = CameoUITests;
+			sourceTree = "<group>";
+		};
+		B095038E204B572F009999F2 /* Robot */ = {
+			isa = PBXGroup;
+			children = (
+				B095038F204B573F009999F2 /* Robot.swift */,
+				B0950393204B5802009999F2 /* Link.swift */,
+				B0950395204B5807009999F2 /* Joint.swift */,
+			);
+			path = Robot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +253,7 @@
 			files = (
 				B0930715204715BB0058E273 /* Assets.xcassets in Resources */,
 				B0930718204715BB0058E273 /* Main.storyboard in Resources */,
+				B05883E02047E3A900AB27C4 /* testScene.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0930713204715BB0058E273 /* ViewController.swift in Sources */,
+				B0950396204B5807009999F2 /* Joint.swift in Sources */,
+				B0950390204B573F009999F2 /* Robot.swift in Sources */,
 				B0930711204715BB0058E273 /* AppDelegate.swift in Sources */,
+				B0950394204B5802009999F2 /* Link.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
